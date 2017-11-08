@@ -1,0 +1,29 @@
+PODS:
+  - Agatha (0.1.0):
+    - Nimble (~> 7.0.2)
+    - Quick (~> 1.2.0)
+    - RxSwift (~> 4.0)
+    - RxTest (~> 4.0)
+  - Nimble (7.0.2)
+  - Quick (1.2.0)
+  - RxSwift (4.0.0)
+  - RxTest (4.0.0):
+    - RxSwift (~> 4.0)
+
+DEPENDENCIES:
+  - Agatha (from `../`)
+
+EXTERNAL SOURCES:
+  Agatha:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Agatha: 458adea743dc5db0ce82d88957363771824fb21c
+  Nimble: bfe1f814edabba69ff145cb1283e04ed636a67f2
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
+  RxTest: 0041e792cede35e53e4749f378d21482af0e9d12
+
+PODFILE CHECKSUM: 4b755a3b7678dd4486ae3cdcf059e0518323d728
+
+COCOAPODS: 1.3.1

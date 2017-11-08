@@ -1,7 +1,8 @@
 use_frameworks!
+inhibit_all_warnings!
+
 target 'Agatha_Tests' do
+  platform :ios, '8.0'
+
   pod 'Agatha', :path => '../'
-  
-  pod 'Quick', '~> 1.2.0'
-  pod 'Nimble', '~> 7.0.2'
 end
