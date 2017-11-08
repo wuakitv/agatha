@@ -1,0 +1,33 @@
+fastlane_version "2.35.0"
+
+default_platform :ios
+
+platform :ios do
+  desc "Install dependencies"
+  lane :pods do
+    cocoapods(podfile: 'Example/Podfile', use_bundle_exec: true)
+  end
+
+  desc "Runs Agatha tests and verifies podspec"
+  lane :test do |options|
+    scan(workspace: 'Example/Agatha.xcworkspace', scheme: "Agatha-Example", devices: ['iPhone 7 Plus'], code_coverage: true, output_directory: "build/reports/tests")
+    slather(workspace: 'Example/Agatha.xcworkspace', proj: "Example/Agatha.xcodeproj", scheme: "Agatha-Example",
+      binary_basename: 'Agatha', source_directory: "Agatha/Classes", output_directory: "build/reports/coverage",
+      simple_output: options[:show_coverage] != true, html: options[:show_coverage] == true, show: options[:show_coverage] == true,
+      use_bundle_exec: true)
+    pod_lib_lint(allow_warnings: true, private: true, use_bundle_exec: true)
+  end
+
+  desc "Publish new version of Agatha to spec repository"
+  lane :publish do
+    pod_push(path: 'Agatha.podspec', repo: 'wuakitv', allow_warnings: true)
+  end
+
+  after_all do |lane|
+    # nothing right now
+  end
+
+  error do |lane, exception|
+    # hipchat(channel: "Discovery", from: "iOS builds", message: exception.message, api_token: "IBImm0vQXINpndI4gFu28WbX7fZxrLwJxIAqHsWg", version: 2)
+  end
+end

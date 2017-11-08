@@ -1,8 +1,43 @@
-# OS X
-.DS_Store
+### Bundler ###
+# Bundler - The best way to manage a Ruby application's gems
+/vendor/bundle/
+.bundle
 
-# Xcode
+
+### fastlane ###
+# fastlane - A streamlined workflow tool for Cocoa deployment
+
+# fastlane specific
+fastlane/README.md
+fastlane/report.xml
+fastlane/reports
+
+# deliver temporary files
+fastlane/Preview.html
+
+# snapshot generated screenshots
+fastlane/screenshots/**/*.png
+fastlane/screenshots/screenshots.html
+
+# scan temporary files
+fastlane/test_output
+
+# FBSnapshotTestCase
+FailureDiffs
+
+
+### Cocoapods ###
+# CocoaPods is a dependency manager for Swift and Objective-C Cocoa projects
+Pods
+
+
+### Xcode ###
+
+## Build generated
 build/
+DerivedData/
+
+## Various settings
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -12,22 +47,43 @@ build/
 *.perspectivev3
 !default.perspectivev3
 xcuserdata/
-*.xccheckout
-profile
+
+## Other
 *.moved-aside
-DerivedData
-*.hmap
-*.ipa
+*.xccheckout
+*.xcscmblueprint
 
-# Bundler
-.bundle
+### Xcode Patch ###
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcworkspace/contents.xcworkspacedata
+/*.gcno
 
-Carthage
-# We recommend against adding the Pods directory to your .gitignore. However
-# you should judge for yourself, the pros and cons are mentioned at:
-# http://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
-# 
-# Note: if you ignore the Pods directory, make sure to uncomment
-# `pod install` in .travis.yml
-#
-# Pods/
+
+### macOS ###
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk

@@ -1,0 +1,5 @@
+ruby '2.4.2'
+source 'https://rubygems.org'
+gem 'cocoapods', '~> 1.3'
+gem 'fastlane', '~> 2.0'
+gem 'slather', '~> 2.0'
