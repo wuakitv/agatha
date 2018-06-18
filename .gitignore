@@ -1,5 +1,6 @@
 ### Bundler ###
 # Bundler - The best way to manage a Ruby application's gems
+/bin/
 /vendor/bundle/
 .bundle
 
@@ -59,6 +60,11 @@ xcuserdata/
 !*.xcodeproj/xcshareddata/
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
+
+
+### AppCode ###
+**/.idea/workspace.xml
+**/.idea/tasks.xml
 
 
 ### macOS ###
