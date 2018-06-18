@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Agatha'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Nimble matchers for RxSwift TestableObservers.'
 
   s.description      = <<-DESC
@@ -19,8 +19,8 @@ to check that your observer has received the expected events.
   s.tvos.deployment_target = '9.0'
 
   s.source_files = 'Agatha/Classes/**/*'
-  s.dependency 'Quick', '~> 1.2.0'
-  s.dependency 'Nimble', '~> 7.0.2'
+  s.dependency 'Quick', '~> 1.3.0'
+  s.dependency 'Nimble', '~> 7.1.0'
   s.dependency 'RxSwift', '~> 4.0'
   s.dependency 'RxTest', '~> 4.0'
 end

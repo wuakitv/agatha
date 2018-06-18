@@ -20,7 +20,7 @@
 		8871C73FD99ED57FB2FC3036 /* Pods-Agatha_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Agatha_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Agatha_Tests/Pods-Agatha_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8F5B1BF592A1D830C4ED7400 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		918C0DD9EC306604B9C573AE /* Pods_Agatha_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Agatha_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2915F417F472C7FB672F948 /* Agatha.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Agatha.podspec; path = ../Agatha.podspec; sourceTree = "<group>"; };
+		B2915F417F472C7FB672F948 /* Agatha.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Agatha.podspec; path = ../Agatha.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +110,6 @@
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
 				811E2ED2340BD22331E07CB4 /* [CP] Embed Pods Frameworks */,
-				91F82D23173189432A1582B1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,21 +208,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Agatha_Tests/Pods-Agatha_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		91F82D23173189432A1582B1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Agatha_Tests/Pods-Agatha_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
